@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="445.5" y="465.0">com.happy.repository.ProductRepository</node>
+    <node x="392.55555555555554" y="-24.499999999999886">com.happy.model.Product</node>
+    <node x="28.5" y="442.5">com.happy.controller.HusbandController</node>
+    <node x="-31.5" y="-0.1666666666666572">com.happy.controller.ProductController</node>
+    <node x="54.0" y="261.0">com.happy.service.ProductService</node>
+    <node x="335.5" y="249.5">com.happy.service.ProductServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.happy.service.ProductServiceImpl" target="com.happy.service.ProductService">
+      <point x="-184.5" y="0.0" />
+      <point x="106.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="472.0" y="399.0" />
+  <SelectedNodes>
+    <node>com.happy.controller.ProductController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
