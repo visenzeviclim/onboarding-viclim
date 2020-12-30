@@ -111,6 +111,6 @@ public class Test_005_http_request_mockServer_Service {
         this.mockMvc.perform(post("/store/buyeggs")
                 .param("quantity","12"))
                 .andDo(print())
-                .andExpect(jsonPath("$.milk").value(12));
+                .andExpect(jsonPath("$.eggs").value(12));
     }
 }
