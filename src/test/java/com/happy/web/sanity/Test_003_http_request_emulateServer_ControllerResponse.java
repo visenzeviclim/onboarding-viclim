@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Test_004_http_request {
+public class Test_003_http_request_emulateServer_ControllerResponse {
 
     @Autowired
     private TestRestTemplate testRestTemplate;
@@ -30,7 +30,8 @@ public class Test_004_http_request {
 
     @Test
     public void test_001_Http_Request_IntroController(){
-        assertThat(this.testRestTemplate.getForObject("http://localhost:"+port+"/intro", String.class)).isEqualTo("Welcome Here !!!!");
+        assertThat(this.testRestTemplate.getForObject("http://localhost:"+port+"/intro", String.class))
+                .isEqualTo("Welcome Here !!!!");
     }
 
 }
