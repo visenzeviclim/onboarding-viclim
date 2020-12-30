@@ -107,18 +107,6 @@ public class ProductServiceTest {
         when(this.productRepository.findById(1)).thenReturn(Optional.of(mockProd));
         assertEquals(this.productService.buyMilk(1), 1 );
 
-        // test max amount
-        milkQty = 8;
-        mockProd.setMilkQty(milkQty);
-        when(productRepository.findById(1)).thenReturn(Optional.of(mockProd));
-        assertEquals(  productService.buyMilk(milkQty) , milkQty  );
-
-        // test buy more
-        milkQty = 8;
-        mockProd.setMilkQty(milkQty);
-        when(productRepository.findById(1)).thenReturn(Optional.of(mockProd));
-        assertEquals(  productService.buyMilk( milkQty + 2) , milkQty  );
-
     }
 
     @Test
